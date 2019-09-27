@@ -13,6 +13,7 @@
             <!--(iteraates through the final array to output players)-->
             <li class="list-group-item" v-for="(player, slotIndex) in match" :key="slotIndex">
               <span v-if="player">{{player.name}}</span>
+              <button class="btn btn-sm btn-success float-right" >Win</button>
             </li>
           </ul>
         </div>
@@ -51,7 +52,7 @@ export default {
           let slot = matches[i][j];
           //if the slot is empty add the player
           if (!slot) {
-            //this.$set explicitily that the data has changed so it gets re rendered(vue does not look for changes deep in objects)
+            //this.$set explicitily tells vue that the data has changed so it gets re rendered(vue does not look for changes deep in objects)
             this.$set(this.rounds[round][i], j, player);
             return;
           }
