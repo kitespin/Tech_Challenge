@@ -15,7 +15,10 @@
                             v-for="(player, slotIndex) in match"
                             :key="slotIndex"
                         >
-							<span v-if="player"><i class="fas fa-user"></i> {{player.name}}</span>
+                            <span v-if="player">
+                                <i class="fas fa-user"></i>
+                                {{player.name}}
+                            </span>
                             <button
                                 class="btn btn-sm btn-success float-right"
                                 @click="win(player, roundIndex)"
@@ -50,8 +53,8 @@ export default {
         win(player, roundIndex) {
             //When the win button is clicked get the player and round and call function addPlayerToMatch with new values.
             let round = roundIndex + 1;
-            console.log(player);
-            console.log(round);
+            //console.log(player);
+            //console.log(round);
             this.addPlayerToMatch(round, player);
         },
 
@@ -67,8 +70,8 @@ export default {
                     //if the slot is empty add the player
                     if (!slot) {
                         //this.$set explicitily tells vue that the data has changed so it gets re rendered(vue does not look for changes deep in objects)
-						console.log("found empty slot",round,i,j)
-						this.$set(this.rounds[round][i], j, player);
+                        //console.log("found empty slot", round, i, j);
+                        this.$set(this.rounds[round][i], j, player);
                         return;
                     }
                 }
@@ -82,7 +85,7 @@ export default {
             const noPlayers = this.players.length;
             //no of rounds is the number of players^0.5 plus 1 which is the winner. Formula from googling.
             //Math.pow(base, exponent). ceil used to always round up to take into account odd number of players.
-            console.log(noPlayers);
+            //console.log(noPlayers);
 
             let noRounds = Math.ceil(Math.pow(noPlayers, 0.5) + 1);
 
@@ -92,7 +95,7 @@ export default {
                 noRounds = Math.ceil(Math.pow(noPlayers, 0.5));
             }
             //console.log for testing
-            console.log(`${noPlayers} players, ${noRounds} rounds`);
+            //console.log(`${noPlayers} players, ${noRounds} rounds`);
 
             //create an empty array with noRounds long of empty slots.
             //stack overflow solution https://stackoverflow.com/questions/34937349/javascript-create-empty-array-of-a-given-size/48016225
