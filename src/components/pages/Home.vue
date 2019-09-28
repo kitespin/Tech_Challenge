@@ -15,7 +15,7 @@
                             v-for="(player, slotIndex) in match"
                             :key="slotIndex"
                         >
-                            <span v-if="player">{{player.name}}</span>
+							<span v-if="player"><i class="fas fa-user"></i> {{player.name}}</span>
                             <button
                                 class="btn btn-sm btn-success float-right"
                                 @click="win(player, roundIndex)"
