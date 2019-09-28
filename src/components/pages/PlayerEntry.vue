@@ -9,7 +9,9 @@
             </div>
                     
             <button type="submit" class="btn btn-primary" @click="onAdd()">Submit</button>
-
+            <br>
+            <br>
+            <p>Click on Stages page after submitting players</p>
         </div>
 
         <div v-for="(player, index) in players" :key="index">

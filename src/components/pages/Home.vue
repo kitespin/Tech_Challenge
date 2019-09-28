@@ -8,7 +8,6 @@
         <!-- (iterates through the round array to get the chunks) -->
         <div v-for="(match, matchIndex) in round" :key="matchIndex">
           <!--  <pre>{{match}}</pre>  -->
-
           <ul class="list-group mb-4">
             <!--(iteraates through the final array to output players)-->
             <li class="list-group-item" v-for="(player, slotIndex) in match" :key="slotIndex">
