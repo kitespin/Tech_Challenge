@@ -32,7 +32,7 @@ I logged to the console as much as possible while writing the code for testing.
  
 
 ## Project setup
-[yarn getting started](https://yarnpkg.com/en/docs/install#mac-stable)
+[yarn installation guide](https://yarnpkg.com/en/docs/install#mac-stable)
 ```
 yarn install
 ```
