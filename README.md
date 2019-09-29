@@ -32,6 +32,9 @@ I used console.log and outputted the arrays in the html using e.g. <pre>{{round}
  [PingPong Brackets](http://paul.developme.space/).
  
 
+
+
+
 ## Project setup
 ```
 yarn install
