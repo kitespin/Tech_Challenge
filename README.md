@@ -25,7 +25,7 @@ From this I knew I would need a nav bar of some description, so I created this a
 
 The players names would need to be inputted into an empty array and then on the stages page, this array would need to be accessed, and the data used to randomize the player pairings. An unlimited number of players could be added to the players list so I had to take this into account when calculating the number of rounds.
 
-I used console.log and outputted the arrays in the html using e.g. <pre>{{round}}</pre> as much as possible while writing the code for testing.
+I logged to the console as much as possible while writing the code for testing.
 
 ### Live website
  [PingPong Brackets](http://paul.developme.space/).
