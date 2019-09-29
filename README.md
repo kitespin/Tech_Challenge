@@ -29,7 +29,7 @@ I used console.log and outputted the arrays in the html using e.g. <pre>{{round}
 
 ```
 ### Live website
- [Here](http://paul.developme.space/).
+ [PingPong Brackets](http://paul.developme.space/).
  
 
 ## Project setup
