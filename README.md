@@ -30,7 +30,7 @@ I used console.log and outputted the arrays in the html using e.g. <pre>{{round}
 ```
 ### Live website
 ```
- http://paul.developme.space/
+ <http://paul.developme.space/>
  ```
 
 ## Project setup
