@@ -1,3 +1,4 @@
+<style src="./styles/global.css" lang="css"></style>
 <template>
     <div id="app">
         <nav-bar></nav-bar>

@@ -17,7 +17,7 @@
             <p>Click on Stages page after submitting players</p>
         </div>
 
-        <div v-for="(player, index) in players" :key="index">
+        <div style="color:#3e8bf3"v-for="(player, index) in players" :key="index">
             <i class="fas fa-user"></i>
             {{index + 1}} {{player.name}}
         </div>
@@ -54,4 +54,6 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
+
+
 </style>
