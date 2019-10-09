@@ -2,7 +2,7 @@
     <div id="NavBar">
 
     <!-- Taken from https://getbootstrap.com/docs/4.3/components/navbar/ -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light mb-4">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
         
         <div class="container">
 
