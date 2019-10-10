@@ -2,8 +2,8 @@
     <div id="Home" class="container">
         <div class="row">
             <!-- iterates over the rounds -->
-            <div style="color: #dfdfdf" class="col" v-for="(round, roundIndex) in rounds" :key="roundIndex">
-                Round: {{roundIndex+1}}
+            <div class="col" v-for="(round, roundIndex) in rounds" :key="roundIndex">
+                <h4 class="alert alert-dark">Round: {{roundIndex+1}}</h4>
                 <!-- <pre>{{round}}</pre>  -->
                 <!-- (iterates through the round array to get the chunks) -->
                 <div style="color:#3e8bf3" v-for="(match, matchIndex) in round" :key="matchIndex">
@@ -11,12 +11,12 @@
                     <ul class="list-group mb-4">
                         <!--(iteraates through the final array to output players)-->
                         <li
-                            class="list-group-item"
+                            class="list-group-item list-group-item-secondary"
                             v-for="(player, slotIndex) in match"
                             :key="slotIndex"
                         >
                             <span v-if="player">
-                                <i class="fas fa-user"></i>
+                                <i class="fas fa-user" style="color:#3e8bf3"></i>
                                 {{player.name}}
                             </span>
                             <button

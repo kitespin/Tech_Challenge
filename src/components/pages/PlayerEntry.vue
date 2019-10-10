@@ -17,9 +17,10 @@
             <p>Click on Stages page after submitting players</p>
         </div>
 
-        <div style="color:#3e8bf3"v-for="(player, index) in players" :key="index">
-            <i class="fas fa-user"></i>
-            {{index + 1}} {{player.name}}
+        <div v-for="(player, index) in players" :key="index">
+            <ul class="list-group mb-4 ">
+                <li class="list-group-item list-group-item-secondary"><i class="fas fa-user" style="color:#3e8bf3"></i>  {{index + 1}}  {{player.name}}</li>
+            </ul>
         </div>
         <!-- Just for testing to diplay the players array of player objects-->
         <!-- <pre>{{players}}</pre> -->
